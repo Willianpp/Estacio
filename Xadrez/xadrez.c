@@ -2,7 +2,7 @@
 
 int main (){
 
-int torre = 1, bispo = 1, rainha;
+int torre = 1, bispo = 1, rainha, cavalo, movimentacaocavalo = 1;
 
 // Torre se move para a direita 5 vezes.
 printf("=====Movimento da Torre=====\n");
@@ -26,5 +26,16 @@ for (rainha = 1; rainha <= 8; rainha++)
 {
     printf("Esquerda\n"); // Imprimi a direção do movimento
 }   
+
+// Cavalo de move para cima e para direita uma vez.
+printf("=====Movimento do Cavalo=====\n");
+
+    while(movimentacaocavalo--){
+        for(int cavalo = 0; cavalo <= 1; cavalo++){
+            printf("Cima\n");
+        }
+        printf("Direita\n");
+    }
+
 return 0;
 }
